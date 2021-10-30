@@ -1,0 +1,139 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+#colorsView {
+    display: flex;
+}
+#colorsView .column {
+    min-height: calc(100vh - 64px);
+    width: 50%;
+}
+.colorContainer {
+    /* background-color: bisque; */
+    display: grid;
+    place-items: center;
+}
+.selectedColor {
+    background-color: #B1DA5A;
+    border-radius: 0.5rem;
+    width: 85%;
+    height: 85%;
+    position: relative;
+
+    transition: background-color 0.5s ease;
+    /* background: url(texture.svg); */
+    /* background: url(dust_texture.svg); */
+
+    /* background-blend-mode: lighten, luminosity; */
+}
+.selectedColor.old {
+    background: url(negro.svg);
+    background-blend-mode: darken, luminosity;
+}
+.colorTexts {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+.selectedText {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.selectedTextCode {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    color: transparent;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.optionsHeader {
+    margin-top: 7vh;
+}
+.optionsTitle {
+    font-size: 3rem;
+    font-weight: 400;
+    display: inline;
+}
+.optionsLink {
+    display: inline;
+    float: right;
+}
+.optionsContainer {
+    /* background-color: rgb(105, 63, 11); */
+    overflow-y: auto;
+    max-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    margin-right: 3%;
+}
+.optionsBoxes {
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    overflow-y: auto;
+}
+.optionsBoxes div {
+    height: 100px;
+
+    /* Cambiar esto para editar como se ajusta */
+    width: 200px;
+    flex: 1 2 auto;
+    display: flex;
+    align-items: center;
+    place-content: center;
+
+    /* border-left: 0.4rem solid; */
+    /* margin: 1rem 0; */
+    /* padding-left: 1rem; */
+
+    margin: 2px;
+    /* transition: transform 0.4s; */
+    transition: flex-grow 0.15s;
+    border-radius: 4px;
+}
+.optionsBoxes div:hover {
+    /* transform: scale(110%); */
+    /* border-radius: 4px; */
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+
+    flex-grow: 4;
+}
+.optionsBoxes div:last-child {
+    margin-bottom: 7vh;
+}
+
+
+
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+    background: #fff;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #cfcfcf;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+
+
+
+/* Pa más adelante */
+@media (max-width: 768px) {
+    #colorsView {
+        flex-direction: column;
+    }
+    #colorsView .column {
+        width: 100%;
+    }
+    .colorContainer {
+        min-height: 300px !important;
+    }
+  }

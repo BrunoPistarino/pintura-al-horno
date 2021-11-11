@@ -20,6 +20,7 @@ function hideAll() {
     mainView.style.display = "none";
     colorsView.style.display = "none";
     contactView.style.display = "none";
+    nosotrosView.style.display = "none";
     btnColores.className = "";
     btnContacto.className = "";
     btnNosotros.className = "";

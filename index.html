@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,19 @@
     <link rel="stylesheet" href="css/colores.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/landing.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <div class="navCont">
             <img src="logo.svg" alt="a" id="logo">
             <div class="navLinks">
-                <a href="#" class="current" id="btnColores">Colores</a>
+                <a href="#" id="btnColores">Colores</a>
                 <a href="#" id="btnContacto">Contacto</a>
                 <a href="#">Algo</a>
                 <a href="#">Otro</a>
@@ -40,7 +42,48 @@
     </nav>
 
     <section id="mainView">
-        <h1>dsadsadsa</h1>
+        <div class="banner">
+            <section class="left_section">
+                <section>
+                    <span>
+                        <h1 class="title">Pistarino pintura al horno </h1>
+                        <h4>Soluciones en pintura para el sertor industrial y domésctico.
+                            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. --> </h4>
+                        <a href="#Auctions" class="btn1">Ver colores</a>
+                    </span>
+                </section>
+            </section>
+            <section class="right-section">
+            </section>
+        </div>
+
+        <div class="materials">
+            <h2 class="title">Apto para</h2>
+            <h4 class="description">Nuestra pintura es apta para los siguientes tipos de materiales AGREGAR (aluminio hierro cobre, bronce, aleaciones)</h4>
+            <div class="grid">
+                <div class="material">
+                    <div class="img aluminio"></div>
+                    <h4>Aluminio</h4>
+                </div>
+                <div class="material">
+                    <div class="img hierro"></div>
+                    <h4>Hierro</h4>
+                </div>
+                <div class="material">
+                    <div class="img cobre"></div>
+                    <h4>Cobre</h4>
+                </div>
+                <div class="material">
+                    <div class="img bronce"></div>
+                    <h4>Bronce</h4>
+                </div>
+                <div class="material">
+                    <div class="img alea"></div>
+                    <h4>Otras aleaciones</h4>
+                </div>
+            </div>
+        </div>
+
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -79,10 +122,10 @@
                     </div>
                 </div>
             </div>
-       </footer>
+        </footer>
     </section>
 
-    <section id="colorsView">
+    <section id="colorsView" style="display: none;">
         <div class="colorContainer column">
             <div class="selectedColor">
                 <span class="colorTexts">
@@ -110,7 +153,7 @@
         </div>
     </section>
 
-    <section id="contactView">
+    <section id="contactView" style="display: none;">
         <div class="cont">
             <div class="top">
                 <p class="data">Pistarino Pintural al Horno</p>
@@ -125,11 +168,14 @@
             </div>
         </div>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4297.030238649699!2d-61.501403581384075!3d-31.260745989602345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x907bc9b79cec1a83!2sPistarino%20Pintura%20al%20Horno!5e0!3m2!1ses-419!2sar!4v1635504992939!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4297.030238649699!2d-61.501403581384075!3d-31.260745989602345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x907bc9b79cec1a83!2sPistarino%20Pintura%20al%20Horno!5e0!3m2!1ses-419!2sar!4v1635504992939!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
     <script src="script.js"></script>
     <script src="js/navbar.js"></script>
 </body>
+
 </html>

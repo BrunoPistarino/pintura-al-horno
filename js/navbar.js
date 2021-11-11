@@ -11,12 +11,6 @@ const contactView = document.querySelector("#contactView")
 
 navClose.style.display = "none";
 
-hideAll()
-
-// SACAR
-mainView.style.display = "block"
-// SACAR
-
 navButton.addEventListener('click', () => {
     if (isOpen === false ) {
         navOpen.style.display = "block";

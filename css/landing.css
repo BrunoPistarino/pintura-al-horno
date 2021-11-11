@@ -1,0 +1,238 @@
+body {
+	background-color: #061221;
+	color: var(--blanco);
+}
+
+a,li,button,i,.button{
+	transition: 0.4s;
+}
+
+.banner .title{
+	font-size:4em;
+	font-weight:600;
+	margin: 2rem 0;
+}
+
+.banner .sub-title{
+	font-size: 1.3em;
+	font-weight:400;
+}
+
+.banner .btn1{
+	padding:20px;
+	text-align:center;
+	border:0;
+	border-radius:40px;
+	display:block;
+	width:150px;
+	margin:2vh 0;
+}
+
+.banner .btn1{
+	background:#061221;
+	color:#fff;
+}
+
+.banner .btn1:hover{
+	background:#fff;
+	color:#cd2027;
+}
+
+/*Banner*/
+.banner{
+	width:100%;
+	display:flex;
+	position:relative;
+	background: linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url("https://www.solerpalau.com/es-es/blog/wp-content/uploads/2018/12/ventilacion-taller-mecanico.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:right;
+	overflow-x: hidden;
+}
+
+.banner section{
+	height:100vh;
+	width:50%;
+	position:relative;
+}
+
+.banner .left_section{
+	width:100%;
+}
+
+.banner .left_section section{
+	background-color: transparent;
+	background-image: linear-gradient(260deg, #cd2027 44%, #cd2027 38%);
+	transform: skew(20deg);
+	position:absolute;
+	left:-15%;
+	width:100%;
+}
+
+.banner .left_section span{
+	transform: skew(-20deg);
+	position:absolute;
+	top:30vh;
+	left:20vw;
+	width:50%;
+	color:#fff;
+	letter-spacing:0.08em;
+	z-index:11111111;
+}
+
+.banner .left_section span h4{
+	line-height:1.6em;
+	font-weight:400 !important;
+}
+
+
+@media (max-width:1120px){
+	.banner{
+		background-attachment:local;
+	}
+	.banner .left_section section{
+		left:-40%;
+	}
+	.banner .left_section span{
+		left:30vw;
+		width:130%;
+	}
+}
+
+@media (max-width:420px){
+	.banner .left_section section{
+		left:-58%;
+	}
+	.banner .left_section span{
+		left:45vw;
+		width:120%;
+	}
+}
+
+/* Materials */
+.materials {
+}
+.materials .title {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 600;
+	margin-top: 8rem;
+	margin-bottom: 2rem;
+}
+.materials .description {
+	text-align: center;
+	font-size: 1rem;
+}
+.materials .grid {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 10rem;
+}
+.materials .material {
+	background-color: #bbbbbb;
+	flex-grow: 1;
+	max-width: 400px;
+	min-width: 200px;
+	height: auto;
+	margin: 2rem;
+}
+.materials .img {
+	width: 100%;
+	overflow: hidden;
+	background-attachment:local;
+	background-size:cover;
+	background-position:right;
+	height: 200px;
+}
+.materials .aluminio {
+	background: url("../img/aluminio.jpg");
+}
+.materials .hierro {
+	background: url("../img/hierro.jpg");
+}
+.materials .cobre {
+	background: url("../img/cobre.png");
+}
+.materials .bronce {
+	background: url("../img/bronce.jpg");
+}
+
+
+
+/* Footer */
+.footer {
+	background-color: #02091a;
+    padding: 70px 0;
+	line-height: 1.5;
+}
+.footer .container {
+	max-width: 1170px;
+	margin: auto;
+}
+.footer .row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col {
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4 {
+	font-size: 18px;
+	color: var(--blanco);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+} 
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+.footer-col ul li a {
+	font-size: 16px;
+	text-transform: capitalize;
+	color: var(--blanco);
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+	color: var(--blanco);
+	padding-left: 8px;
+}
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: var(--blanco);
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+	color: #24262b;
+	background-color: var(--blanco);
+}
+@media(max-width: 767px) {
+	.footer-col {
+    	width: 50%;
+    	margin-bottom: 30px;
+	}
+	.footer-col:first-child {
+		order: 1;
+	}
+	.footer-col:last-child {
+		order: 2;
+	}
+}
+@media(max-width: 574px) {
+	.footer-col {
+    	width: 100%;
+	}
+}

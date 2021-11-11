@@ -88,7 +88,6 @@ const selectedColor = document.querySelector('.selectedColor')
 
 function loadColors() {
     colors.forEach(color => {
-        console.log(color)
         const colorCont = document.createElement('div')
         colorCont.innerText = color.name
         colorCont.style.backgroundColor = color.color

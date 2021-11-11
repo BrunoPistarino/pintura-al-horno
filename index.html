@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JCP</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/colores.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/landing.css">
+
+    <link rel="icon" type="image/png" href="/img/favicon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,11 +25,11 @@
 <body>
     <nav>
         <div class="navCont">
-            <p id="logo">JCP</p>
+            <p id="logo" class="toPrincipal">JCP</p>
             <div class="navLinks">
-                <a href="#" id="btnColores">Colores</a>
-                <a href="#" id="btnContacto">Contacto</a>
-                <a href="#" id="btnNosotros">Nosotros</a>
+                <a href="#" id="btnColores" class="toColores">Colores</a>
+                <a href="#" id="btnContacto" class="toContacto">Contacto</a>
+                <a href="#" id="btnNosotros" class="toNosotros">Nosotros</a>
             </div>
         </div>
     </nav>
@@ -38,8 +40,8 @@
                 <section>
                     <span>
                         <h1 class="title">Pistarino pintura al horno </h1>
-                        <h4>Soluciones en pintura para el sertor industrial y domésctico.</h4>
-                        <a href="#" class="btn1">Ver colores</a>
+                        <h4>Soluciones en pintura para el sector industrial y doméstico.</h4>
+                        <a href="#" class="btn1 toColores">Ver colores</a>
                     </span>
                 </section>
             </section>
@@ -107,7 +109,7 @@
     <section id="contactView" style="display: none;">
         <div class="cont">
             <div class="top">
-                <p class="data">Pistarino Pintural al Horno</p>
+                <p class="data">Pistarino Pintura al Horno</p>
             </div>
             <div class="bot">
                 <p class="title">Correo electrónico</p>
@@ -123,16 +125,20 @@
         </div>
     </section>
 
+    <section id="nosotrosView">
+
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
                     <h4>Páginas</h4>
                     <ul>
-                        <li><a href="#">Principal</a></li>
-                        <li><a href="#">Colores</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#" class="toPrincipal">Principal</a></li>
+                        <li><a href="#" class="toColores">Colores</a></li>
+                        <li><a href="#" class="toContacto">Contacto</a></li>
+                        <li><a href="#" class="toNosotros">Nosotros</a></li>
                     </ul>
                 </div>
                 <div class="footer-col"></div>
@@ -150,7 +156,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/navbar.js"></script>
 </body>
 

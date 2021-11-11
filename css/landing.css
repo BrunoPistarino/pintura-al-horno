@@ -40,44 +40,44 @@ a,li,button,i,.button{
 
 /*Banner*/
 .banner{
-	width:100%;
-	display:flex;
-	position:relative;
+	width: 100%;
+	display: flex;
+	position: relative;
 	background: linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url("https://www.solerpalau.com/es-es/blog/wp-content/uploads/2018/12/ventilacion-taller-mecanico.jpg");
-	background-attachment:fixed;
-	background-size:cover;
-	background-position:right;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: right;
 	overflow-x: hidden;
 }
 
 .banner section{
-	height:100vh;
-	width:50%;
-	position:relative;
+	height: 100vh;
+	width: 50%;
+	position: relative;
 }
 
 .banner .left_section{
-	width:100%;
+	width: 100%;
 }
 
 .banner .left_section section{
 	background-color: transparent;
 	background-image: linear-gradient(260deg, #cd2027 44%, #cd2027 38%);
 	transform: skew(20deg);
-	position:absolute;
-	left:-15%;
-	width:100%;
+	position: absolute;
+	left: -15%;
+	width: 100%;
 }
 
 .banner .left_section span{
 	transform: skew(-20deg);
-	position:absolute;
-	top:30vh;
-	left:20vw;
-	width:50%;
-	color:#fff;
-	letter-spacing:0.08em;
-	z-index:11111111;
+	position: absolute;
+	top: 30vh;
+	left: 20vw;
+	width: 50%;
+	color: #fff;
+	letter-spacing: 0.08em;
+	z-index: 11111111;
 }
 
 .banner .left_section span h4{

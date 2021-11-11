@@ -9,33 +9,14 @@ nav {
     max-width: 1400px;
     margin: 0 auto;
 }
-.navCont img {
-    height: 100%;
+.navCont p {
+    display: inline;
+    font-size: 3rem;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
     margin-left: 1rem;
-}
-.navButton {
-    display: none;
-    height: 100%;
-    width: 64px;
-    float: right;
-    place-items: center;
-}
-.navButton button {
-    background: none;
-    border-radius: 5px;
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-content: center;
-    border: none;
     cursor: pointer;
-}
-.navButton button:focus {
-    border: 2px solid #fff;
-}
-.navButton svg {
-    width: 30px;
-    color: #9CA3AF;
 }
 .navLinks {
     float: right;
@@ -64,8 +45,7 @@ nav {
     .navLinks {
         display: none;
     }
-    .navButton {
-        /* display: block; */
-        display: grid;
+    .navCont p {
+        margin-left: calc(50% - 40px);
     }
 }

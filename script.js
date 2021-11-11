@@ -1,4 +1,3 @@
-// LOS BLANCOS ESTÁN TODOS MAL
 const colors = [
     { name: "Blanco", color: "#EDF2F2", code: "200044/0" },
     { name: "Blanco texturado", color: "#EDF2F2", code: "210002/0" },
@@ -106,8 +105,6 @@ function selectColor(color) {
 
     selectedText.style.color = invertColor(color.color, true)
     selectedTextCode.style.webkitTextStrokeColor = invertColor(color.color, true)
-    // selectedText.style.color = invertColor(color.color, false)
-    // selectedTextCode.style.webkitTextStrokeColor = invertColor(color.color, false)
 
     if (color.name === "Plata vieja" || color.name === "Oro viejo" || color.name === "Cobre viejo") {
         selectedColor.classList.add("old");
@@ -122,11 +119,9 @@ loadColors()
 
 
 function invertColor(hex, bw) {
-    // Si "bw" es true va a devolver blanco o negro, de lo contrario devuelve el color inverso
     if (hex.indexOf('#') === 0) {
         hex = hex.slice(1);
     }
-    // convert 3-digit hex to 6-digits.
     if (hex.length === 3) {
         hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
     }
@@ -137,16 +132,13 @@ function invertColor(hex, bw) {
         g = parseInt(hex.slice(2, 4), 16),
         b = parseInt(hex.slice(4, 6), 16);
     if (bw) {
-        // http://stackoverflow.com/a/3943023/112731
         return (r * 0.299 + g * 0.587 + b * 0.114) > 186
             ? '#000000'
             : '#FFFFFF';
     }
-    // invert color components
     r = (255 - r).toString(16);
     g = (255 - g).toString(16);
     b = (255 - b).toString(16);
-    // pad each with zeros and return
     return "#" + padZero(r) + padZero(g) + padZero(b);
 }
 

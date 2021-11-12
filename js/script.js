@@ -114,9 +114,6 @@ function selectColor(color) {
 
 loadColors()
 
-
-
-
 function invertColor(hex, bw) {
     if (hex.indexOf('#') === 0) {
         hex = hex.slice(1);

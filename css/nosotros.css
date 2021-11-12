@@ -1,0 +1,23 @@
+#nosotrosView {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+#nosotrosView h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+#nosotrosView img {
+    width: 100%;
+    border-radius: .5rem;
+}
+#nosotrosView p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+#nosotrosView p:last-child {
+    margin-bottom: 6rem;
+}
